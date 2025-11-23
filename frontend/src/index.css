@@ -1,0 +1,36 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root{
+  --bg:#f6f8fa;
+  --card:#fff;
+  --muted:#6b7280;
+  --accent:#0b5fff;
+  --danger:#e11d48;
+  --success:#059669;
+  --border:#e5e7eb;
+}
+
+*{box-sizing:border-box}
+body{margin:0;font-family:Inter,system-ui,-apple-system,"Segoe UI",Roboto,"Helvetica Neue",Arial;background:var(--bg);color:#111}
+.app{max-width:1200px;margin:28px auto;padding:18px}
+.header{display:flex;align-items:center;justify-content:space-between;gap:16px;margin-bottom:16px}
+.header-left{display:flex;gap:12px;align-items:center}
+.search{padding:8px 10px;border:1px solid var(--border);border-radius:8px;min-width:300px}
+.select{padding:8px;border:1px solid var(--border);border-radius:8px}
+.header-right{display:flex;gap:8px;align-items:center}
+.btn{background:var(--accent);color:#fff;padding:8px 12px;border-radius:8px;border:0;cursor:pointer}
+.btn.secondary{background:#fff;color:#111;border:1px solid var(--border)}
+.table-card{background:var(--card);padding:12px;border-radius:12px;border:1px solid var(--border)}
+.table{width:100%;border-collapse:collapse}
+.table th, .table td{padding:10px;border-bottom:1px solid #f0f0f0;text-align:left}
+.thumb{width:60px;height:40px;object-fit:cover;border-radius:6px;border:1px solid var(--border)}
+.status{display:inline-block;padding:6px 8px;border-radius:999px;font-weight:600;font-size:13px}
+.status.in{background:rgba(5,150,105,0.12);color:var(--success)}
+.status.out{background:rgba(225,29,72,0.08);color:var(--danger)}
+.action-btn{padding:6px 8px;border-radius:6px;border:1px solid var(--border);background:#fff;cursor:pointer;margin-right:6px}
+.inline-input{padding:6px;border:1px solid var(--border);border-radius:6px;width:100%}
+.small{font-size:13px;color:var(--muted)}
+.panel{position:fixed;right:18px;top:18px;bottom:18px;width:360px;background:var(--card);box-shadow:0 10px 30px rgba(2,6,23,0.08);padding:12px;border-radius:12px}
+.center{display:flex;align-items:center;justify-content:center;padding:30px;color:var(--muted)}
