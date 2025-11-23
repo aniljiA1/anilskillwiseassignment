@@ -51,6 +51,6 @@ npm un dev
 you should see:
 run: http://localhost:5173/
 
-deploy link: 
+deploy link: https://anilskillwiseassignment.vercel.app/
 
 
